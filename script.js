@@ -3,7 +3,9 @@ console.log(navigator)
 let x= document.getElementById('browser-info')
 console.log(x)
 
-let y= `You are using ${navigator.appName} version ${navigator.appVersion}`
+let browserName = navigator.appName
+let version = navigator.appVersion
+let y= "You are using " + browserName + " version " + version
 console.log(y)
 
 x.innerHTML = y
